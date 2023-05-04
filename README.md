@@ -110,11 +110,7 @@ TODO: Write credits
 
 We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/i-see-pixels/hirehub-backend/tags).
 
-## Authors
 
-- **Siddhant** - _Frontend_ - [Siddhant](https://github.com/i-see-pixels)
-- **Himanshu** - _Backend_ - [Himanshu](https://github.com/shunmahi2000)
-- **Hitesh** - _Backend_ - [Hitesh](https://github.com/spyder7370)
 
 See also the list of [contributors](https://github.com/i-see-pixels/hirehub-backend/contributors) who participated in this project.
 
