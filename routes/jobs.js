@@ -7,7 +7,9 @@ const express = require('express'),
 const Job = require('../models/job'),
 	Notification = require('../models/notification'),
 	User = require('../models/user');
-
+	const multer = require('multer');
+	const { storage } = require('../cloudinary/config');
+	const upload = multer({ storage });
 const jobController = require('../controllers/job');
 //LANDING PAGE
 // router.get("/", function (req, res) {
@@ -19,7 +21,7 @@ router.get('/jobs', isAuth, jobController.jobIndex);
 //JOB NEW FORM ROUTE
 router.get('/jobs/new', isAdmin, jobController.newJobForm);
 //JOB CREATE ROUTE
-router.post('/jobs', isAdmin, jobController.createNewJob); 
+router.post('/jobs', isAdmin, upload.array('image'), jobController.createNewJob); 
 //JOB SHOW ROUTE
 router.get('/jobs/:id', isAuth, jobController.showJob);
 //JOB EDIT PAGE ROUTE

@@ -54,6 +54,14 @@ module.exports.createNewJob = async (req, res) => {
 			description: `${req.body.job.name} just posted a new job !!`,
 			author: req.body.job.name
 		};
+        console.log(req.files)
+		for (let file of req.files) {
+			newJob.images.push({
+				url: file.path,
+				filename: file.filename
+			});
+		}
+		
 		const newNotif = await new Notification(notif);
 		await newJob.save();
 		await newNotif.save();

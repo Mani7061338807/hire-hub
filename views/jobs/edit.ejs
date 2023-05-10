@@ -12,8 +12,14 @@
 
                     <div class="form-floating">
                         <input type="text" class="form-control mid-input" id="jobTitle" name="job[name]"
-                            value="<%=job.name%>" required>
+                            placeholder="Title" required>
                         <label for="jobTitle">Job Title</label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please enter title for job.
+                        </div>
                     </div>
 
                     <div class="form-floating">
@@ -24,6 +30,12 @@
                             <option value="Seasonal">Seasonal</option>
                         </select>
                         <label for="type">Job Type</label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please select a job type.
+                        </div>
                     </div>
 
                     <div class="form-floating">
@@ -34,48 +46,82 @@
                             <option value="Graphics Designer">Graphics Designer</option>
                         </select>
                         <label for="category">Job Category</label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please select a job category
+                        </div>
                     </div>
 
                     <div class="form-floating">
                         <input type="text" class="form-control" id="registerName" name="job[eligibility]"
-                            value="<%=job.eligibility%>" required>
+                            placeholder="Eligibility" required>
                         <label for="registerName">Eligibility Criteria</label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please enter Eligibility Criteria
+                        </div>
                     </div>
 
                     <div class="form-floating">
                         <input type="date" class="form-control mid-input" id="deadline" name="job[deadline]"
-                            value="<%= job.deadline %>" required>
+                            placeholder="Deadline" required>
                         <label for="deadline">Job Deadline</label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please enter job Deadline.
+                        </div>
                     </div>
 
                     <div class="form-floating">
                         <textarea style="height: 150px;" type="text" class="form-control mid-input" id="lastName"
-                            name="job[description]" required><%= job.description %></textarea>
+                            name="job[description]" placeholder="Description" required></textarea>
                         <label for="lastName">Job Description</label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please enter Job Description.
+                        </div>
                     </div>
-
                     <div class="form-floating">
-                        <textarea style="height: 150px;" type="text" class="form-control mid-input"
-                            id="responsibilities" name="job[responsibilities]"
-                            required><%= job.responsibilities %></textarea>
-                        <label for="responsibilities">Job Responsibilities</label>
+                        <textarea style="height: 150px;" type="text" class="form-control mid-input" id="lastName"
+                            name="job[responsibilities]" placeholder="Description" required></textarea>
+                        <label for="lastName">Responsibilities</label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please enter Job Responsibilities.
+                        </div>
                     </div>
-
                     <div class="form-floating">
-                        <textarea style="height: 150px;" type="text" class="form-control mid-input" id="requirements"
-                            name="job[requirements]" required><%= job.requirements %></textarea>
-                        <label for="requirements">Job Requirements</label>
+                        <textarea style="height: 150px;" type="text" class="form-control mid-input" id="lastName"
+                            name="job[requirements]" placeholder="Description" required></textarea>
+                        <label for="lastName">Requirements</label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please enter job Requirements
+                        </div>
                     </div>
-
-                    <!-- <div class="form-floating">
-                        <input type="text" class="form-control mid-input" id="lastName" name="job[description]" value="<%=job.description%>" required>
-                        <label for="lastName">Job Description</label>
-                    </div> -->
 
                     <div class="form-floating">
                         <input type="text" class="form-control mid-input" id="location" name="job[location]"
-                            value="<%= job.location %>" required>
+                            placeholder="Location" required>
                         <label for="location">Company Location</label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please enter Company Location
+                        </div>
                     </div>
 
                     <div class="form-floating">
@@ -86,6 +132,12 @@
                             <option value="Top Level">Top Level</option>
                         </select>
                         <label for="experience">Experience</label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please enter experience.
+                        </div>
                     </div>
 
                     <div class="lead fs-4 text-center mt-3 mb-3">
@@ -94,44 +146,86 @@
 
                     <div class="form-floating">
                         <input type="text" class="form-control mid-input" id="companysize" name="job[companySize]"
-                            value="<%= job.companySize %>" required>
+                            placeholder="Company Size" required>
                         <label for="companysize">Company Size</label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please enter Company size
+                        </div>
                     </div>
 
                     <div class="form-floating">
                         <input type="text" class="form-control mid-input" id="companyphone" name="job[companyPhone]"
-                            value="<%= job.companyPhone %>" required>
+                            placeholder="Company Phone" required>
                         <label for="companyphone">Company Phone</label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please enter Company Phone
+                        </div>
                     </div>
 
                     <div class="form-floating">
                         <input type="email" class="form-control mid-input" id="companyemail" name="job[companyEmail]"
-                            value="<%= job.companyEmail%>" required>
+                            placeholder="Company Email" required>
                         <label for="companyemail">Company Email</label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please enter Company email
+                        </div>
                     </div>
 
                     <div class="form-floating">
                         <input type="url" class="form-control mid-input" id="companywebsite" name="job[companyWebsite]"
-                            value="<%= job.companyWebsite %>" required>
+                            placeholder="Company Website" required>
                         <label for="companywebsite">Company Website</label>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please enter Company Website
+                        </div>
                     </div>
+                    <label class="input-group-text" for="inputGroupFile01">Upload</label>
+                    <input name="image" type="file" class="form-control" id="inputGroupFile01" multiple required>
+                    <!-- <div class="form-floating">
+                        <input type="text" class="form-control mid-input" id="type" name="job[time]" placeholder="Type" required>
+                        <label for="type">Job Type</label>
+                    </div> -->
+
+                    <!-- <div class="form-floating">
+                        <input type="text" class="form-control mid-input" id="useremail" name="job[logo]" placeholder="Logo url" required>
+                        <label for="useremail">Logo URL</label>
+                    </div> -->
 
                     <div class="form-floating">
                         <input type="number" class="form-control" id="jobStipend" name="job[stipend]"
-                            value="<%=job.stipend%>" required min="0" step="1000">
+                            placeholder="Stipend" required min="0" step="1000">
                         <label for="jobStipend">Job Stipend</label>
-
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <div class="invalid-feedback">
+                            Please enter Job Stipend
+                        </div>
                     </div>
-                    <button class="w-100 btn btn-lg btn-primary" type="submit">Edit Job</button>
+
+                    <button class="w-100 btn btn-lg btn-primary" type="submit">Post Job</button>
                 </form>
             </main>
             <div class="form-signin">
-                <a href="/jobs/<%= job._id %>">Go back</a>
+                <a href="/jobs">Go back</a>
             </div>
         </div>
     </div>
 
 </div>
+<script src="/scripts/form-validation.js"></script>
 
 <script src="/scripts/form.js"></script>
 <%- include('../partials/footer'); -%>

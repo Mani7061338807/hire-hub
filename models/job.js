@@ -39,7 +39,12 @@ var jobSchema = new mongoose.Schema({
 		type: String,
 		default: 'unknown'
 	},
-
+    images:[ 
+		{
+			url: String,
+			filename: String
+		}
+	],
 	time: {
 		type: String,
 		default: 'Full-Time'
